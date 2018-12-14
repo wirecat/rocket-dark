@@ -12,7 +12,7 @@
 }
 
 /* Hide the header. It's annoying. */
-.rc-old .fixed-title {
+div * header.fixed-title:after {
     display: none
 }
 

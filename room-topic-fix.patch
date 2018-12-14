@@ -1,0 +1,13 @@
+diff --git a/rocket-dark.css b/rocket-dark.css
+index 1022bea..e923927 100644
+--- a/rocket-dark.css
++++ b/rocket-dark.css
+@@ -12,7 +12,7 @@
+ }
+ 
+ /* Hide the header. It's annoying. */
+-.rc-old .fixed-title {
++div * header.fixed-title:after {
+     display: none
+ }
+ 
