@@ -1,0 +1,112 @@
+/*
+ * Designed for self hosted rocket chat with light sensitivity in mind.
+ */
+
+:root {
+    --background: #1e1e1e;
+    --hyperlink: #77dd77;
+    --labels: #dd77dd;
+    --font: #7799dd;
+    --buttons: chocolate;
+    --headers: hotpink;
+}
+
+/* Hide the header. It's annoying. */
+.rc-old .fixed-title {
+    display: none
+}
+
+/* Main area background */
+.content-background-color,
+.rc-message-box {
+    background: var(--background)
+}
+
+/* Sidebars background */
+.sidebar,
+.flex-tab .content,
+.flex-tab .user-view,
+.flex-tab .list-view {
+    background: var(--background)
+}
+
+/* Make side panel labels visible */
+.flex-tab label {
+    color: var(--labels)
+}
+
+/* Side panel fonts to match user name colors */
+.flex-tab .current-setting {
+    color: var(--hyperlink)
+}
+
+/* Give user names a pastel green */
+.user, 
+.user-image {
+    color: var(--hyperlink)
+}
+
+/* Hide the alias... it's just noise? */
+.message-alias {
+    display: none
+}
+
+/* Change message body font color to a pastel blue */
+.message .body {
+    color: var(--font)
+}
+
+/* Change text input color */
+.rc-message-box__textarea {
+    color: var(--font)
+}
+
+/* Keep emoji text cool with pastel blue */
+.emoji-filter .search {
+    color: var(--font)
+}
+
+/* Emoji background to dark */
+.emoji-picker.show {
+    background: var(--background)  
+}
+
+/* Change icon colors and links (because buttons) so they are visible. Mmm chocolate */
+.rc-icon,
+.message a,
+.flex-tab-bar .tab-button-icon,
+.rc-old .list-view>.title h2,
+.list-view>.title,
+.rc-old .list-view.uploaded-files-list i{
+    color: var(--buttons);
+    fill: var(--buttons)
+}
+
+/* Keep links visible on hover */
+.message a:hover {
+    color: var(--buttons);
+    fill: var(--buttons)
+}
+
+/* Make it more noticeable when someone is online */
+.sidebar-item__user-status--online {
+    background-color: var(--hyperlink)
+}
+
+/* Hide leader thing... it's dumb. */
+.room-leader.message,
+.room-leader a.chat-now {
+    visibility: hidden;
+}
+
+/* Make hover not suck */
+.room-leader.message:hover,
+.room-leader a.chat-now {
+    background: var(--background);
+    color: var(--font);
+}
+
+/* Room title to a hot pink */
+.fixed-title h2 {
+    color: var(--headers)
+}
